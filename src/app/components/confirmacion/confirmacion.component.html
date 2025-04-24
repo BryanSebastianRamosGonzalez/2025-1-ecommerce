@@ -1,0 +1,16 @@
+<h2>Resumen de la compra</h2>
+
+<h3>Productos:</h3>
+@for (product of cartItems; track product) {
+  <div>
+    <p>{{ product.nombre }} - {{ product.precio | currency }}</p>
+  </div>
+
+}
+
+<h3>Datos del comprador:</h3>
+<p>Nombre: {{ user.name }}</p>
+<p>Correo: {{ user.email }}</p>
+<p>Teléfono: {{ user.phone }}</p>
+<p>Dirección: {{ user.address }}</p>
+<button (click)="clearBuyer()">Eliminar datos del comprador</button>

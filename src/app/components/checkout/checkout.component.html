@@ -1,0 +1,15 @@
+<form (ngSubmit)="submitForm()">
+    <label>Nombre:</label>
+    <input type="text" [(ngModel)]="user.name" name="name" required />
+    
+    <label>Correo:</label>
+    <input type="email" [(ngModel)]="user.email" name="email" required />
+    
+    <label>Teléfono:</label>
+    <input type="tel" [(ngModel)]="user.phone" name="phone" required />
+    
+    <label>Dirección:</label>
+    <textarea [(ngModel)]="user.address" name="address" required></textarea>
+    
+    <button type="submit">Confirmar</button>
+  </form>

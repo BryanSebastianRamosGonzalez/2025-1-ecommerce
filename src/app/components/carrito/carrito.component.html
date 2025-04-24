@@ -1,0 +1,28 @@
+<div class="carrito-container">
+    <h2>Carrito de Compras</h2>
+    <table border="1" class="carrito-table">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (product of cartItems; track product.id) {
+                <tr>
+                    <td>{{ product.nombre }}</td>
+                    <td>{{ product.precio | currency }}</td>
+                    <td>
+                        <button (click)="removeFromCart(product)">Eliminar</button>
+                    </td>
+        
+                </tr>
+            }
+            
+        </tbody>
+        <tfoot>
+            <tr>    
+                <td colspan="2" style="text-align: right;"><strong>Total:</strong></td>
+                <td><strong>{{ calcularTotal() | currency }}</strong></td>
+            </tr>
+        </tfoot>

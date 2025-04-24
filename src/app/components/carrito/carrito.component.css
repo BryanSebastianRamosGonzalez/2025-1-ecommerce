@@ -1,0 +1,31 @@
+.carrito-container {
+    background-color: #e8f5e9; /* Light green background */
+    border: 2px dashed #4caf50; /* Dashed green border */
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    color: #2e7d32; /* Dark green text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carrito-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.carrito-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px dashed #81c784; /* Light green dashed separator */
+}
+
+.carrito-total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
